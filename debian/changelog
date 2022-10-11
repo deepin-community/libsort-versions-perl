@@ -1,0 +1,158 @@
+libsort-versions-perl (1.62-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 1.62.
+  * Update debian/upstream/metadata.
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 15 Dec 2015 20:16:28 +0100
+
+libsort-versions-perl (1.61-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ Lucas Kanashiro ]
+  * Add debian/upstream/metadata
+  * Import upstream version 1.61
+  * Declare compliance with Debian policy 3.9.6
+  * Bump debhelper compatibility level to 9
+  * Add autopkgtest-pkg-perl
+
+ -- Lucas Kanashiro <kanashiro.duarte@gmail.com>  Sun, 16 Aug 2015 09:36:59 -0300
+
+libsort-versions-perl (1.60-1) unstable; urgency=low
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Changed: Replace versioned (build-)dependency on
+    perl (>= 5.6.0-{12,16}) with an unversioned dependency on perl (as
+    permitted by Debian Policy 3.8.3).
+
+  [ Ansgar Burchardt ]
+  * Email change: Ansgar Burchardt -> ansgar@debian.org
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Salvatore Bonaccorso ]
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ Axel Beckert ]
+  * debian/copyright: migrate pre-1.0 format to 1.0 using "cme fix dpkg-
+    copyright"
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  * New upstream release.
+  * Switch to "3.0 (quilt)" source format.
+  * debian/copyright: update Upstream-Contact, upstream copyright
+    information, and refresh license stanzas.
+  * Bump debhelper compatibility level to 8.
+  * Declare compliance with Debian Policy 3.9.5.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 15 Jun 2014 13:51:03 +0200
+
+libsort-versions-perl (1.5-4) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * Take over for the Debian Perl Group with maintainer's permission
+    (http://lists.debian.org/debian-perl/2008/06/msg00039.html)
+  * debian/control: Added: Vcs-Svn field (source stanza); Vcs-Browser
+    field (source stanza); Homepage field (source stanza). Removed:
+    Homepage pseudo-field (Description). Changed: Maintainer set to
+    Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+    (was: Florian Ragwitz <rafl@debian.org>); Florian Ragwitz
+    <rafl@debian.org> moved to Uploaders.
+  * debian/watch: use dist-based URL.
+  * debian/control: Changed: Switched Vcs-Browser field to ViewSVN
+    (source stanza).
+  * debian/control: Added: ${misc:Depends} to Depends: field.
+
+  [ Ryan Niebur ]
+  * Remove Florian Ragwitz from Uploaders
+  * Close ITA (Closes: #523147)
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+  [ Ansgar Burchardt ]
+  * Refresh rules for debhelper 7.
+  * Do no longer install README (part of POD documentation).
+  * Add myself to Uploaders.
+  * Convert debian/copyright to proposed machine-readable format.
+  * Bump Standards-Version to 3.8.2.
+
+ -- Ansgar Burchardt <ansgar@43-1.org>  Tue, 21 Jul 2009 11:59:14 +0200
+
+libsort-versions-perl (1.5-3) unstable; urgency=low
+
+  * New maintainer (Closes: #344456).
+  * Moved all build-dep-indep packages to build-dep if they are needed in the
+    clean target.
+  * Removed build-dependency to libtest-simple-perl. It's a core module.
+
+ -- Florian Ragwitz <rafl@debian.org>  Fri, 10 Feb 2006 20:42:03 +0100
+
+libsort-versions-perl (1.5-2) unstable; urgency=low
+
+  * New maintainer. (Closes: #331098: RFA: libsort-versions-perl -- Perl
+    module for sorting of revision (and similar) numbers)
+  * debian/control: add upstream Homepage to long description
+  * debian/copyright: extend note about previous and current maintainer
+  * Minor adjustments to follow latest Perl Policy
+  * Standards-Version 3.6.2, no changes required
+
+ -- Florian Ernst <florian@debian.org>  Fri,  7 Oct 2005 16:11:09 +0200
+
+libsort-versions-perl (1.5-1) unstable; urgency=low
+
+  * New upstream release.
+  * Updated debian/copyright to match information in upstream README.
+  * Bumped standards version to 3.5.9.
+  * Now run regression tests on build.
+    - Added 'make test' to debian/rules
+    - Added libtest-simple-perl to build dependencies in debian/control
+
+ -- Kenneth J. Pronovici <pronovic@debian.org>  Tue, 26 Aug 2003 10:37:01 -0500
+
+libsort-versions-perl (1.4-6) unstable; urgency=low
+
+  * Changed maintainer address from @ieee.org to @debian.org.
+  * Removed DH_COMPAT settting from debian/rules.
+  * Added debian/compat file to replace DH_COMPAT setting.
+
+ -- Kenneth J. Pronovici <pronovic@debian.org>  Sun, 30 Mar 2003 13:11:28 -0600
+
+libsort-versions-perl (1.4-5) unstable; urgency=low
+
+  * Added debian/watch to look for new package versions as they come out.
+
+ -- Kenneth J. Pronovici <pronovic@ieee.org>  Mon, 30 Dec 2002 15:11:19 -0600
+
+libsort-versions-perl (1.4-4) unstable; urgency=low
+
+  * Changed debian/copyright to reference /usr/share/common-licenses.
+    Corrected formatting in debian/control (max 2 spaces indent).
+
+ -- Kenneth J. Pronovici <pronovic@ieee.org>  Sun,  3 Nov 2002 16:19:04 -0600
+
+libsort-versions-perl (1.4-3) unstable; urgency=low
+
+  * Fix previous release which trashed CVS keyword expansions.
+
+ -- Kenneth J. Pronovici <pronovic@ieee.org>  Thu, 31 Oct 2002 16:12:33 -0600
+
+libsort-versions-perl (1.4-2) unstable; urgency=low
+
+  * Minor packaging clean-ups.
+
+ -- Kenneth J. Pronovici <pronovic@ieee.org>  Tue, 29 Oct 2002 10:17:55 -0600
+
+libsort-versions-perl (1.4-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Kenneth J. Pronovici <pronovic@ieee.org>  Sun,  6 Oct 2002 14:34:28 -0500
+

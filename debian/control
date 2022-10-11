@@ -1,0 +1,39 @@
+Source: libsort-versions-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Ansgar Burchardt <ansgar@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: perl
+Standards-Version: 3.9.6
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-perl/packages/libsort-versions-perl.git
+Vcs-Git: git://anonscm.debian.org/pkg-perl/packages/libsort-versions-perl.git
+Homepage: https://metacpan.org/release/Sort-Versions
+
+Package: libsort-versions-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends}
+Description: Perl module for sorting of revision (and similar) numbers
+ The Sort::Versions module allows easy sorting (via comparisons) of mixed text
+ and numeric strings, similar to the complex "version numbers" that many
+ revision control packages and shared library systems use. For an explanation
+ of the algorithm, it's easiest to look at these examples:
+ .
+  1.1   <  1.2
+  1.1a  <  1.2
+  1.1   <  1.1.1
+  1.1   <  1.1a
+  1.1.a <  1.1a
+  1     <  a
+  a     <  b
+  1     <  2
+ .
+  (special handling for leading zeros)
+  0002  <  1
+  1.06  <  1.5
+ .
+  (a hyphen binds looser than a period)
+  1-1 < 1-2
+  1-2 < 1.2
